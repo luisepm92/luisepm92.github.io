@@ -22,8 +22,9 @@ const { description, title } = Astro.props;
 
     <body>
         
-        <div class="background"></div>
-    <Header />
+        <!-- <div class="background"></div> -->
+        <div class="contenedor-principal"></div>
+        <Header />
     <slot /> 
     </body>
 </html>
@@ -46,7 +47,12 @@ const { description, title } = Astro.props;
         min-height: 100vh;
         
     }
-    .background {
+    .contenedor-principal {
+    max-width: 1200px; /* Ajusta este valor al ancho máximo deseado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espacio alrededor del contenido (opcional) */
+  }
+    /* .background {
     position: fixed; /* Cambié de absolute a fixed */
     top: 0;
     left: 0;
@@ -58,7 +64,8 @@ const { description, title } = Astro.props;
 
     filter: blur(100px); /* Aplica el desenfoque */
 
-}
+    }
+     */
     @media (prefers-reduced-motion: reduce) {
         html {
             scroll-behavior: auto;
