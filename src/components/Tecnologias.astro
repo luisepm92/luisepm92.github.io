@@ -49,9 +49,11 @@ import Tecno_icon from '../icons/Titulos/Tecno_icon.astro';
 
       <style>
         .contenedor-nav {
-          display: grid; /* Convierte el div en un contenedor Grid */
-          grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
-          gap: 20px; /* Espacio entre los elementos */
+        display: flex; /* Convierte el div en un contenedor Flexbox */
+        flex-direction: column; /* Alinea los elementos en columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        /* Otras propiedades opcionales: */
+        gap: 20px; /* Espacio entre los elementos */
         }
       </style>
 
