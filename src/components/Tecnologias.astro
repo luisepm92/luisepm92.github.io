@@ -27,7 +27,7 @@ import Tecno_icon from '../icons/Titulos/Tecno_icon.astro';
   </h2>
 
   <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 p-4"> -->
-    <div class="grid grid-cols-1 md:grid-cols-1 gap-8 md:gap-12 p-4">
+    <div class="contenedor-nav">
     <div>
       <h2 class="text-2xl opacity-80 mb-6 text-center">Lenguajes</h2>
       <nav class="flex flex-wrap justify-center gap-4">
@@ -46,8 +46,15 @@ import Tecno_icon from '../icons/Titulos/Tecno_icon.astro';
         <!-- <Tecnos_icons title="React"><React class="w-12 h-12" /></Tecnos_icons>
         <Tecnos_icons title="Tailwind CSS"><Tailwind class="w-12 h-12" /></Tecnos_icons> -->
       </nav>
+
+      <style>
+        .contenedor-nav {
+          display: grid; /* Convierte el div en un contenedor Grid */
+          grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+          gap: 20px; /* Espacio entre los elementos */
+        }
        <!-- </div>
-    
+       
         <div> -->
       <h2 class="text-2xl opacity-80 mb-6 text-center">Bases de Datos</h2>
       <nav class="flex flex-wrap justify-center gap-4">
