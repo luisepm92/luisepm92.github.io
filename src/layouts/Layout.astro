@@ -22,7 +22,7 @@ const { description, title } = Astro.props;
 
     <body>
         
-        <div class="background contenedor-principal"></div>
+        <div class="background"></div>
         <Header />
     <slot /> 
     </body>
@@ -46,11 +46,7 @@ const { description, title } = Astro.props;
         min-height: 100vh;
         
     }
-    .contenedor-principal {
-    max-width: 1200px; /* Ajusta este valor al ancho máximo deseado */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 20px; /* Espacio alrededor del contenido (opcional) */
-  }
+   
     .background {
     position: fixed; /* Cambié de absolute a fixed */
     top: 0;
