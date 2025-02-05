@@ -24,19 +24,23 @@ import Section_certificados from '../components/Section_certificados.astro';
 description="Mi objetivo es aprender y mejorar constantemente, participando en proyectos innovadores que me permitan ampliar mis conocimientos y aportar soluciones creativas y efectivas.">
 	<main>
 		<Section>
-			<img class="rounded-full w-20 h-20 mb-4" 
-			src=/projects/image1.webp 
-			alt="image1" 
-		/> 
-		<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-5 pb-6 lg:pb-10">
-			Hola, Soy Luis 
-			<a href="https://www.linkedin.com/in/luisporras2025/" target="_blank" rel="noopener"> <div class="flex justify-center items-center hover:scale-110 transition">
-				<Badge> Open To Work </Badge>
-			</div><a/></h1>
-		<h2 class="text-xl lg:text-2xl opacity-80 text-pretty max-w-{700px}">
+			<div class="flex items-center">
+				<img class="rounded-full w-20 h-20 mb-4" 
+				src="/projects/image1.webp" 
+				alt="image1" 
+				/> 
+				<div>
+					<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-5 pb-6 lg:pb-10">
+					Hola, Soy Luis 
+					<a href="https://www.linkedin.com/in/luisporras2025/" target="_blank" rel="noopener"> <div class="flex justify-center items-center hover:scale-110 transition">
+					<Badge> Open To Work </Badge>
+					</div><a/></h1>
+				</div>
+			</div>
+			<h2 class="text-xl lg:text-2xl opacity-80 text-pretty max-w-{700px}">
 			<span class="text-blue-300">WEB DEVELOPER.</span> <br> <p style="text-align: justify;"> ¿Me conoces? Permíteme contarte sobre mí. Soy un desarrollador web apasionado que transforma líneas de código en experiencias digitales únicas. Mi pasión es crear proyectos que inspiran y emocionan. </p>
-		</h2>
-		<nav class="flex gap-x-5 mt-6 flex-wrap">
+			</h2>
+			<nav class="flex gap-x-5 mt-6 flex-wrap">
 			<Social_icons href="https://www.linkedin.com/in/luisporras2025/">
 				<Linkedin class="size-4 md:size-6"/>
 				LinkedIn
@@ -50,8 +54,9 @@ description="Mi objetivo es aprender y mejorar constantemente, participando en p
 				luis.porras.1992@gmail.com
 			</Social_icons>
 		
-		</nav>
+			</nav>
 		</Section>
+
 		<Section_tecno id="tecnologias">
 			<Tecnologias/>
 		</Section_tecno>
