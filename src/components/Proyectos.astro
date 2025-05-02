@@ -3,10 +3,12 @@ import Csharp from "../icons/Tecnologias/Lenguajes/Csharp.astro";
 import Html from "../icons/Tecnologias/Lenguajes/Html.astro";
 import Css from "../icons/Tecnologias/Lenguajes/Css.astro";
 import Js from "../icons/Tecnologias/Lenguajes/Js.astro";
-import React from "../icons/Tecnologias/Frameworks_Librerias/React.astro";
+import React1 from "../icons/Tecnologias/Frameworks_Librerias/React1.astro";
 import Social_icons from "./Social_icons.astro";
 import Github from "../icons/Social/Github.astro";
 import Link from "../icons/Social/Link.astro";
+import React from "../icons/Tecnologias/Lenguajes/React.astro";
+
 
 const TAGS = {
   Html: {
@@ -29,8 +31,13 @@ const TAGS = {
     class: "bg-[#a39535] text-white",
     icon: Js,
   },
-  React: {
+  React1: {
     name: "WordPress",
+    class: "bg-[#1c7777] text-white",
+    icon: React1,
+  },
+  React: {
+    name: "React",
     class: "bg-[#1c7777] text-white",
     icon: React,
   },
@@ -42,7 +49,7 @@ const PROJECTS = [
     description: "Sistema de Recursos Humanos funcional con Spring Boot/Java y React. Backend potente y frontend Reactivo para gestión eficiente. Estilos CSS consistentes con Bootstrap para diseño adaptable. Comunicación asíncrona con AXIOS entre React y APIs RESTful. Base de datos MySql para almacenamiento seguro y disponible de datos de RR.HH.",
     github: "https://github.com/luisepm92/Sistema_RRHH",
     image: "/projects/rrhh.webp",
-    tags: [TAGS.Csharp],
+    tags: [TAGS.React],
   },  
   {
     title: "Ecommerce con Angular y Spring Boot",
