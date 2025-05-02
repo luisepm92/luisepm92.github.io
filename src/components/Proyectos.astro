@@ -8,11 +8,17 @@ import Social_icons from "./Social_icons.astro";
 import Github from "../icons/Social/Github.astro";
 import Link from "../icons/Social/Link.astro";
 import React from "../icons/Tecnologias/Lenguajes/React.astro";
+import Spring from '../icons/Tecnologias/Frameworks_Librerias/Spring.astro';
 
 
 const TAGS = {
   Html: {
     name: "Html",
+    class: "bg-[#963419] text-white",
+    icon: Html,
+  },
+  Spring: {
+    name: "Spring",
     class: "bg-[#963419] text-white",
     icon: Html,
   },
@@ -49,14 +55,14 @@ const PROJECTS = [
     description: "Sistema de Recursos Humanos funcional con Spring Boot/Java y React. Backend potente y frontend Reactivo para gestión eficiente. Estilos CSS consistentes con Bootstrap para diseño adaptable. Comunicación asíncrona con AXIOS entre React y APIs RESTful. Base de datos MySql para almacenamiento seguro y disponible de datos de RR.HH.",
     github: "https://github.com/luisepm92/Sistema_RRHH",
     image: "/projects/rrhh.webp",
-    tags: [TAGS.React],
+    tags: [TAGS.React, TAGS.Spring],
   },  
   {
     title: "Ecommerce con Angular y Spring Boot",
     description: "E-commerce funcional con Spring Boot y Angular. Full Stack robusto (Spring) y flexible (Angular) para UX fluida. Persistencia eficiente con Spring Data JPA y PostgreSQL. Arquitectura Hexagonal para mantenibilidad y escalabilidad. APIs RESTful con Spring Boot para comunicación eficaz. Seguridad robusta con Spring Security para datos y autenticación.",
     github: "https://github.com/luisepm92/eccomerce",
     image: "/projects/ecommerce.webp",
-    tags: [TAGS.Csharp],
+    tags: [TAGS.Csharp, TAGS.Spring],
   },
   {
     title: " Aplicación Web de Carro de Compras",
